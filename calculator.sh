@@ -15,6 +15,7 @@ echo "1. Addition"
 echo "2. Substraction"
 echo "3. Multiplication"
 echo "4. Division"
+echo "5. Remainder"
 read ch
 
 #Acting on the user input
@@ -28,6 +29,7 @@ case $ch in
    ;;
    4) res=`echo "scale=2; $a / $b" | bc`
    ;;
+   5) res=`echo "$a % $b"|bc`
 esac
 
 #Printing result
