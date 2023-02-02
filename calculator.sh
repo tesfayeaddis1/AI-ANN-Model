@@ -10,7 +10,7 @@ read b
 
 #input type of operation
 
-echo "Enter your choice: "
+echo "Enter your operator: "
 echo "1. Addition"
 echo "2. Substraction"
 echo "3. Multiplication"
