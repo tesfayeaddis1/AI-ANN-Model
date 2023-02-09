@@ -2,25 +2,25 @@
 
 int main() {
 
-  char op;
-  double first, second;
+  char ops;
+  double num1, num2;
   printf("Enter an operator (+, -, *, /): ");
-  scanf("%c", &op);
+  scanf("%c", &ops);
   printf("Enter two operands: ");
-  scanf("%lf %lf", &first, &second);
+  scanf("%lf %lf", &num1, &num2);
 
-  switch (op) {
+  switch (ops) {
     case '+':
-      printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
+      printf("%.5f + %.5f = %.5f", num1, num2, num1 + num2);
       break;
     case '-':
-      printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
+      printf("%.5f - %.5f = %.5f", num1, num2, num1 - num2);
       break;
     case '*':
-      printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
+      printf("%.5f * %.5f = %.5f", num1, num2, num1 * num2);
       break;
     case '/':
-      printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
+      printf("%.5f / %.5f = %.5f", num1, num2, num1 / num2);
       break;
     // operator doesn't match any case constant
     default:
