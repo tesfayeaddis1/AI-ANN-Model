@@ -15,7 +15,7 @@ float div(float num1, float num2);
 
 int main()
 {
-    char op;
+    char ops;
     float num1, num2, result=0.0f;
 
     /* Print welcome message */
@@ -24,9 +24,9 @@ int main()
     printf("Enter [number 1] [+ - * /] [number 2]\n");
 
     /* Input two number and operator from user */
-    scanf("%f %c %f", &num1, &op, &num2);
+    scanf("%f %c %f", &num1, &ops, &num2);
 
-    switch(op)
+    switch(ops)
     {
         case '+': 
             result = add(num1, num2);
@@ -49,7 +49,7 @@ int main()
     }
 
     /* Print the result */
-    printf("%.2f %c %.2f = %.2f", num1, op, num2, result);
+    printf("%.2f %c %.2f = %.2f", num1, ops, num2, result);
 
     return 0;
 }
